@@ -1,0 +1,18 @@
+<style>
+  .box {
+    background: blueviolet;
+    height: 200px;
+    width: 300px;
+    margin: 20px;
+    /* jarak luar */
+
+    /* jarak dalam */
+    padding-left: 30px;
+  }
+  .box-dua {
+    background: red;
+    height: 100px;
+    width: 600px;
+    margin-left: 70px;
+  }
+</style>

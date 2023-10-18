@@ -1,0 +1,44 @@
+<h3>Belajar Buat Form</h3>
+<a href="index_welcome.html"><- Kembali ke menu awal</a>
+<br />
+<!-- parent form -->
+<form action="" id="sent_data">
+  <!-- child -->
+  <div class="form-group">
+    <label for="nama_lengkap">Nama Lengkap</label>
+    <input
+      type="text"
+      name="nama_lengkap"
+      id="nama_lengkap"
+      placeholder="Nama Lengkap Anda"
+    />
+  </div>
+  <div class="form-group">
+    <label for="sosial media">Sosial Media</label>
+    <input
+      type="text"
+      name="sosial media"
+      id="sosial media"
+      placeholder="Sosial Media"
+    />
+  </div>
+  <div class="form-group">
+    <label for="alamat">Alamat</label>
+    <textarea
+      name="alamat"
+      id="alamat"
+      cols="30"
+      rows="10"
+      placeholder="Input Alamat Anda"
+    ></textarea>
+  </div>
+  <div class="form-group">
+    <label for="jenis_kelamin">Jenis Kelamin</label>
+    <select name="jenis_kelamin" id="jenis_kelamin">
+      <option value="" disabled selected>Pilih Jenis Kelamin</option>
+      <option value="laki-laki">Laki-laki</option>
+      <option value="perempuan">Perempuan</option>
+    </select>
+  </div>
+  <button type="submit">Submit</button>
+</form>

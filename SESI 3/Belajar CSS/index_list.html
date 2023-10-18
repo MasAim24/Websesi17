@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=h3, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h3 {
+            text-align: center;
+            background-color: aquamarine;
+            color: darkgreen;
+            font-weight: 900;
+            font-family: sans-serif;
+            padding: 15px;
+        }
+
+        ul.transportasi {
+            list-style-type: square;
+        }
+
+        ul.lokasi {
+            list-style-type: circle;
+        }
+
+        ol.merk {
+            list-style-type: upper-roman;
+        }
+
+        @media only screen and (max-width: 600px) {
+            body {
+                background-color: lightblue;
+            }
+
+            h3 {
+                /* hide */
+                display: none;
+            }
+        }
+
+        @media only screen and (min-width: 600px) {
+            body {
+                background-color: lightgreen;
+            }
+
+            ul,
+            ol {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h3>Membuat Style List</h3>
+
+    <!--
+           shorcut
+           ul.transportasi>li
+       -->
+    <ul class="transportasi">
+        <li>Mobil</li>
+        <li>Motor</li>
+        <li>Pesawat</li>
+        <li>Kapal</li>
+    </ul>
+
+    <ul class="lokasi">
+        <li>Bali</li>
+        <li>Jakarta</li>
+        <li>Bandung</li>
+        <li>Medan</li>
+    </ul>
+    <ol class="merk">
+        <li>Yamaha</li>
+        <li>Honda</li>
+        <li>Suzuki</li>
+        <li>Kawaski</li>
+    </ol>
+</body>
+
+</html>
