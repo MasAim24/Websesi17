@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Halaman Web dengan Background Gambar</title>
+    <style>
+        body {
+            background-image: url('img/interest.png'); /* Ganti 'nama-gambar.jpg' dengan nama gambar yang ingin Anda gunakan */
+            background-size: cover; /* Mengatur gambar latar belakang agar menutupi seluruh halaman */
+            background-repeat: no-repeat; /* Mencegah pengulangan gambar latar belakang */
+        }
+        /* Menambahkan gaya ke elemen tautan */
+        a.full-page-link {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            z-index: 1; /* Menempatkan tautan di atas konten lain */
+        }
+    </style>
+</head>
+<body>
+     <!-- Tautan menuju halaman Education yang menutupi seluruh halaman -->
+     <a href="callme.html" class="full-page-link"></a>
+    <!-- Konten halaman web Anda akan ditambahkan di sini -->
+</body>
+</html>

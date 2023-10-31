@@ -1,0 +1,18 @@
+/* Mengatur tampilan link-menu (item menu) */
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+nav a {
+    color: white;
+    /* Mengatur warna teks menjadi putih */
+    text-decoration: none;
+    /* Menghapus garis bawah pada tautan */
+    margin: 0 110px;
+    /* Memberi jarak antara item menu (20px di sebelah kiri dan 20px di sebelah kanan) */
+    padding: 110px 0;
+    /* Memberi ruang di atas dan bawah item menu */
+}

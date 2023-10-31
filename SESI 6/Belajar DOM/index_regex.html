@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h3>Belajar Regex</h3>
+    <script>
+        var foo = /ab+c/
+        var foo2 = new RegExp("ab+c")
+
+        console.log(foo)
+        console.log(typeof foo)
+        console.log(foo2)
+        console.log(typeof foo2)
+
+        // batas
+        console.log('=======================')
+        var str = "Belajar JavaScript"
+        var pola = /Java/
+        console.log(pola.test(str)) //true/false
+        console.log(/Belajar/.test(str)) //true/false
+        console.log(/belajar/.test(str)) //true/false
+        console.log(/JavaScript/.test(str)) //true/false
+        console.log(/JavaScipt/.test(str)) //true/false
+
+        //tambahan / percobaan ke dua
+        // batas
+        console.log("=======================");
+        var polawaktu = "1 jam sama dengan 60 menit, juga sama dengan 3600 detik";
+        var pola = /\d+/g;
+        //   pencarian 1
+        console.log(pola.exec(polawaktu));
+        //   pencarian 2
+        console.log(pola.exec(polawaktu));
+        //   pencarian 3
+        console.log(pola.exec(polawaktu));
+        //   pencarian 4
+        console.log(pola.exec(polawaktu)); //undefined
+
+        //tambahan / percobaan ke tiga
+        // batas
+        console.log("=======================");
+        var polaabjad = /[abcde]../
+        console.log(polaabjad.test("abaa"))
+        console.log(polaabjad.test("fba")) // false
+        console.log(polaabjad.test("1dd")) // false
+        console.log(polaabjad.test("add"))
+        console.log(polaabjad.test(" dd")) // false
+        console.log(polaabjad.test("belajar"))
+    </script>
+</body>
+
+</html>

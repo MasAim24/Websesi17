@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas</title>
+</head>
+
+<body>
+    <h1>Halo Yal (saat diklik ganti)</h1>
+
+    <button id="tombol" onclick="ubahText()">Klik aku</button>
+    <h1>Hitung Maju Mundur</h1>
+    <button onclick="mundur()">Mundur</button>
+    <button onclick="maju()">Maju</button>
+    <p id="hasil">0</p>
+    <script>
+        function ubahText() {
+            var text = document.getElementById("tombol")
+            if (text.innerHTML == "Klik aku") {
+                text.innerHTML = "Halo yal"
+            } else {
+                text.innerHTML = "Klik aku"
+            }
+        }
+        var angka = 0
+        var hasil = document.getElementById("hasil")
+        function mundur() {
+           angka--
+           hasil.innerHTML=angka 
+        }
+        function maju() {
+           angka++
+           hasil.innerHTML=angka 
+        }
+    </script>
+</body>
+
+</html>

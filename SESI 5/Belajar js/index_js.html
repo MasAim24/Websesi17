@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3 id="judul">Belajar JS</h3>
+    <p id="hasil" style="background-color: aqua"></p>
+    
+    <span id="nama"></span>
+    <!-- kasih jarak -->
+    <br>
+    <span id="lokasi"></span>
+    <script>
+      // deklarasi variabel
+      document.getElementById("judul").innerHTML = "Belajar Java Script";
+    
+      var hasil = document.getElementById("hasil");
+      var nama = document.getElementById("nama");
+      var lokasi = document.getElementById("lokasi");
+    
+      //   variabel numeric
+      var nilai1 = 10;
+      var nilai2 = 10;
+      var hasilNilai = nilai1 + nilai2;
+    
+      console.log("hasil : " + hasilNilai);
+    
+      var output =
+        "<p style='background-color: yellow; style: block-inline'>Hasil : " +
+        hasilNilai +
+        "</p>";
+      hasil.innerHTML = "Hasil : " + hasilNilai;
+      hasil.innerHTML += output;
+      document.write(
+        "Hasil : <span style='background-color: yellow;'>" +
+          hasilNilai +
+          "</span>"
+      );
+    
+      var batas = "===".repeat(10);
+      document.write("<br>" + batas + "<br>");
+    
+      //variabel string
+      var namaStr = "Workshop 4 Days";
+      var lokasiStr = "Online";
+      nama.innerHTML = namaStr;
+      lokasi.innerHTML = lokasiStr;
+    </script>
+
+     
+</body>
+</html>

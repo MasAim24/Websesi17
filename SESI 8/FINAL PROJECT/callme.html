@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Halaman Web dengan Background Gambar</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body {
+            background-image: url('img/Hubungi Kami.png'); /* Ganti 'nama-gambar.jpg' dengan nama gambar yang ingin Anda gunakan */
+            background-size: cover; /* Mengatur gambar latar belakang agar menutupi seluruh halaman */
+            background-repeat: no-repeat; /* Mencegah pengulangan gambar latar belakang */
+            position: relative; /* Mengatur posisi relatif pada body untuk penempatan tombol kembali */
+        }
+         /* Mengatur tampilan ikon anak panah */
+         .back-icon {
+            font-size: 24px; /* Mengatur ukuran ikon */
+            color: white; /* Mengatur warna ikon menjadi putih */
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            cursor: pointer; /* Mengubah kursor mouse menjadi tangan saat mengarahkan ke ikon */
+        }  
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="https://wa.me/081261813465">Whats App</a>
+        <a href="mailto:hakimashofi@gmail.com">Email</a>
+        <a href="https://www.google.com/maps/search/?api=1&query=Pesantren Jabal Nur, Kandis, Siak, Riau, Indonesia, Kode Pos 28686">Maps</a>
+        <a href="https://instagram.com/Amir bin Hakim">Sosmed</a>   
+    </nav>
+
+    <!-- Tombol anak panah untuk kembali ke halaman depan -->
+    <i class="fas fa-arrow-left back-icon" onclick="window.location.href='index.html'"></i>
+
+    <!-- Konten halaman web Anda akan ditambahkan di sini -->
+</body>
+</html>

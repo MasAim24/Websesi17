@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h3>Aplikasi Ubah Warna</h3>
+    <div class="form-group">
+        <label for="warna_latas">Warna Latar</label>
+        <input id="warna_latar" type="color" />
+    </div>
+    <div class="form-group">
+        <label for="warna_teks">Warna Teks</label>
+        <input id="warna_teks" type="color" />
+    </div>
+    <button id="reset" type="reset">Reset</button>
+    <script>
+        // get data warna latar
+        resetbg()
+        var warna_latar = document.getElementById("warna_latar");
+        // get data warna teks
+        var warna_teks = document.getElementById("warna_teks");
+
+        //event warna latar
+        warna_latar.addEventListener("change", function () {
+            document.body.style.backgroundColor = warna_latar.value;
+            console.log(warna_latar.value)
+        });
+        //event warna teks
+        warna_teks.addEventListener("change", function () {
+            document.body.style.color = warna_teks.value;
+            console.log(warna_teks.value)
+        });
+        var reset = document.getElementById("reset");
+        reset.addEventListener("click", function () {
+            // alert("hello")
+            resetbg()
+        });
+        function resetbg() {
+document.body.style.backgroundColor = "blue"
+document.body.style.color = "beige"
+// warna_latar.value= "#2317cf"
+// warna_teks.value= "#ffffff"
+        }
+    </script>
+</body>
+
+</html>

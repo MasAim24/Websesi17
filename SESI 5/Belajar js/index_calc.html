@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar Kalkulator</title>
+</head>
+<body>
+    <h1>Belajar Kalkulator</h1>
+    <div id="hasil"></div>
+    <script>
+      var nilai1 = 10;
+      var nilai2 = 20;
+    
+      // statis
+      var hasilTambah = nilai1 + nilai2;
+      var hasilKurang = nilai1 - nilai2;
+      var hasilKali = nilai1 * nilai2;
+      var hasilBagi = nilai1 / nilai2;
+    
+      var output = document.getElementById("hasil");
+      output.innerHTML = hitung(nilai1, nilai2, "tambah");
+      //   output.innerHTML = hasilTambah;
+    
+      function hitung(nilai1, nilai2, status) {
+        // loigc > + - * /
+        var hasil = 0;
+        if (status == "tambah") {
+          hasil = nilai1 + nilai2;
+        } else if (status == "kurang") {
+          hasil = nilai1 - nilai2;
+        } else if (status == "kali") {
+          hasil = nilai1 * nilai2;
+        } else if (status == "bagi") {
+          hasil = nilai1 / nilai2;
+        } else {
+          hasil = "Status tidak dikenali";
+        }
+        var outputFunc = `${nilai1} ${status} ${nilai2} <br> hasil : ${hasil}`;
+        // output.innerHTML = outputFunc;
+        return outputFunc;
+      }
+      
+      // yang baru
+      //   alert('hei')
+        cetakNamaNoParameter();
+        document.write("<br>");
+        //   gk pake parameter
+        function cetakNamaNoParameter() {
+          console.log("Arif 1");
+          document.write("Arif 1");
+        }
+        //   pake parameter
+        function cetakNama(nama) {
+          console.log(nama);
+          document.write(nama);
+        }
+        //   cetakNama("Arif") tidak dijadikan variabel
+        cetakNama(nama("Arif 2"));
+        document.write("<br>");
+    
+        var hasilNama = nama("Arif 3");
+        cetakNama(hasilNama);
+    
+        function nama(a) {
+          return a;
+        }
+    
+        let nilaiku = 85;
+        document.write("<br>");
+        document.write(`Grade : ${hitungGrade(nilaiku)}`);
+        function hitungGrade(nilai) {
+          let grade = "";
+          if (nilai >= 80 && nilai <= 100) {
+            grade = "A";
+          } else if (nilai >= 70 && nilai < 80) {
+            grade = "B";
+          } else if (nilai >= 60 && nilai < 70) {
+            grade = "C";
+          } else if (nilai >= 45 && nilai < 60) {
+            grade = "D";
+          } else if (nilai >= 0 && nilai < 45) {
+            grade = "E";
+          } else {
+            grade = "Nilai tidak dikenali";
+          }
+          return grade;
+        }  
+    </script>
+   
+</body>
+</html>
